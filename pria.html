@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+<style>
+    /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation styles */
+.nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+/* FontAwesome icon styles */
+.nav i {
+    margin-left: 5px;
+}
+
+    
+.container-baju {
+    position: absolute;
+    top: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-baju ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-baju ul li {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container-baju ul li img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+.container-baju ul li p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container-baju ul li button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container-Sepatu {
+    position: absolute;
+    top: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-Sepatu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-Sepatu ul li {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container-Sepatu ul li img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+.container-Sepatu ul li p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container-Sepatu ul li button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+</style>
+<body>
+    <div class="nav">
+        <a href="#">Beauty-Fashion</a>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="#">Pria</a></li>
+            <li><a href="#">Wanita</a></li>
+            <li><a href="#">Anak-anak</a></li>
+            <li><a href="#">Remaja</a></li>
+            <li><a href="barang.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="far fa-heart"></i></a></li>
+            <li><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </div>
+    <div class="container-baju">
+        <ul>
+            <li> 
+                <p>Baju kaos pria</p>
+                <img src="img/Cowo 1.jpg" alt="">
+                <p>harga 25k</p>
+                <button>beli sekarang</button>
+            </li>
+
+            <li> 
+                <p>Baju koko pria</p>
+                <img src="img/Cowo2.jpg" alt="">
+                <p>Harga 50k</p>
+                <button>beli sekarang</button>
+            </li>
+
+            <li> 
+                <p>Baju koko pria</p>
+                <img src="img/Cowo2.jpg" alt="">
+                <p>Harga 50k</p>
+                <button>beli sekarang</button>
+            </li>
+        </ul>
+    </div>
+    <div class="container-Sepatu">
+        <ul>
+            <li> 
+                <p>Sepatu pria 1</p>
+                <img src="img/Sepatuc1.webp" alt="">
+                <p>harga 25k</p>
+                <button>beli sekarang</button>
+            </li>
+
+            <li> 
+                <p>Sepatu Pria 2</p>
+                <img src="img/Sepatuc2.jpeg" alt="">
+                <p>Harga 50k</p>
+                <button>beli sekarang</button>
+            </li>
+
+            <li> 
+                <p>sepatu pria 3</p>
+                <img src="img/Sepatuc3.webp" alt="">
+                <p>Harga 50k</p>
+                <button>beli sekarang</button>
+            </li>
+    <div class="container-celana">
+        <ul>
+            <li> 
+                <p>Celana pria 1</p>
+                <img src="img/Cl1.jpg" alt="">
+                <p>harga 25k</p>
+                <button>beli sekarang</button>
+            </li>
+
+            <li> 
+                <p>Celana Pria 2</p>
+                <img src="img/Cl2.jpeg" alt="">
+                <p>Harga 50k</p>
+                <button>beli sekarang</button>
+            </li>
+
+            <li> 
+                <p>Celana Pria 3</p>
+                <img src="img/Cl3.jpeg" alt="">
+                <p>Harga 50k</p>
+                <button>beli sekarang</button>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

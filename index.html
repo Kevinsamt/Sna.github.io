@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty-Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="html.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="#">Beauty-Fashion</a>
+        <ul>
+            <li><a href="pria.html">Pria</a></li>
+            <li><a href="cewe.html">Wanita</a></li>
+            <li><a href="#">Anak-anak</a></li>
+            <li><a href="#">Remaja</a></li>
+            <li><a href="barang.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="img/1.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+          <img src="img/2.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+          <img src="img/3.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+          <img src="img/4.png" style="width:100%">
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>        
+    
+    <div class="container">
+        <div class="wanita">
+            <img src="img/cewe.jpeg" alt="Cewe">
+            <a href="cewe.html">Cewe</a>
+        </div>
+        <div class="pria">
+            <img src="img/Cowo.jpg" alt="Pria">
+            <a href="pria.html">Pria</a>
+        </div>
+        <div class="Sport">
+            <img src="img/Sport.jpg" alt="Sport">
+            <a href="sport.html">Sport</a>
+        </div>
+        <div class="anak">
+            <img src="img/anak.jpeg" alt="Anak">
+            <a href="remaja.html">Anak</a>
+        </div>
+        <div class="Keterangan">
+        <h1>Beauty-Fashion</h1>
+        <p>Beauty-Fashion adalah sebuah website yang menyediakan berbagai macam produk beauty dan fashion untuk pria, wanita, anak-anak, dan remaja.</p>
+        <div class="contack">
+            <h2>Kontak Kami</h2>
+            <ul>
+                <li><i class="fa-brands fa-whatsapp"></i><a href="">Whatsapp</a></li>
+                <li><i class="fa-brands fa-instagram"></i><a href="">Instagram</a</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <script>var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          slides[slideIndex-1].style.display = "block";  
+        }
+        </script>
+</html>
